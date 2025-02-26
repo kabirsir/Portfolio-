@@ -1,1 +1,168 @@
-this is a html file
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .about,
+        .projects,
+        .contact {
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .projects .project {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects .project h3 {
+            color: #333;
+        }
+
+        .projects .project p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal website!</p>
+    </header>
+
+    <div class="main-content">
+
+        <!-- About Me Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm John Doe, a passionate web developer with a focus on front-end development. I specialize in HTML, CSS, JavaScript, and building responsive websites that look great on all devices. I enjoy learning new technologies and improving my skills every day.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Personal Website</h3>
+                <p>This is a personal website I built using HTML, CSS, and JavaScript. It includes a clean design, a responsive layout, and various interactive elements.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Portfolio Website</h3>
+                <p>A showcase of my web development skills. The website is built using modern web technologies, with a responsive and clean layout that adapts to any screen size.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3: To-Do List App</h3>
+                <p>A simple to-do list application built with JavaScript. It allows users to add, remove, and mark tasks as completed. It helps users manage their daily tasks efficiently.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 John Doe</p>
+    </footer>
+
+</body>
+
+</html>
+
